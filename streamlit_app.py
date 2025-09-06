@@ -86,6 +86,32 @@ api_url = st.sidebar.text_input(
     help="Ex: https://billets-api-1.onrender.com"
 )
 test_btn = st.sidebar.button("Tester la connexion")
+# ---------- Infos projet ----------
+st.sidebar.markdown("---")
+st.sidebar.subheader("ℹ️ Informations du Projet")
+st.sidebar.markdown("""
+**Développé par :**  
+👩‍💻 *Sona KOULIBALY*  
+
+**Technologies utilisées :**  
+- ⚡ FastAPI *(Backend)*  
+- 🎨 Streamlit *(Frontend)*  
+- 🤖 Machine Learning *(scikit-learn)*  
+- 📊 Plotly *(Visualisations)*  
+""")
+
+# ---------- Format des données ----------
+st.sidebar.markdown("---")
+st.sidebar.subheader("📋 Format des données")
+st.sidebar.markdown("""
+Les colonnes requises :  
+- `diagonal`  
+- `height_left`  
+- `height_right`  
+- `margin_low`  
+- `margin_up`  
+- `length`  
+""")
 
 # ---------- Health check ----------
 api_ok = False
